@@ -10,9 +10,9 @@
 		<!--<property name="hibernate.connection.url">jdbc:jtds:sqlserver://DESKTOP-UH8BN5S/_056_DB;instance=SQLEXPRESS;</property> -->
 		
 		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-		<property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
 		<!--<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/_056_DB;instance=tc;</property>-->
-		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/_056_DB;instance=tc</property>
+		<property name="hibernate.connection.url">jdbc:mysql://127.0.0.1:3306/_056_DB;</property>
 		
 		<property name="hibernate.connection.username">056db</property>
 		<property name="hibernate.connection.password">056db</property>
