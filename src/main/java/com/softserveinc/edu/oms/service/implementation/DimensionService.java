@@ -23,7 +23,7 @@ import com.softserveinc.edu.oms.persistence.dao.params.SortProperties;
 import com.softserveinc.edu.oms.service.interfaces.IDimensionService;
 
 /**
- * @author Ìèðîñëàâ
+ * 
  * 
  */
 @Service
