@@ -311,8 +311,8 @@
 				</executions>
 				<configuration>
 					<outxml>true</outxml>
-					<source>1.8</source>
-					<target>1.8</target>
+					<source>$java-version</source>
+					<target>$java-version</target>
 				</configuration>
 			</plugin>
 
