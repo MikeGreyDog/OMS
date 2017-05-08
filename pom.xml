@@ -313,6 +313,7 @@
 					<outxml>true</outxml>
 					<source>${java-version}</source>
 					<target>${java-version}</target>
+					<complianceLevel>${java-version}</complianceLevel>
 				</configuration>
 			</plugin>
 
