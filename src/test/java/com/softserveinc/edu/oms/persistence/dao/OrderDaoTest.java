@@ -135,12 +135,12 @@ public class OrderDaoTest extends CleanUpDBTestCase {
 				.size());
 	}*/
 
-	@Test
+	/**@Test
 	public void testFindByDeliveryDateMore() {
 		assertEquals(0,
 				orderDao.findByDeliveryDate(d, SelectCondition.GREATER_THAN)
 						.size());
-	}
+	}*/
 
 	@Test
 	public void testFindByDeliveryDateLess() {
