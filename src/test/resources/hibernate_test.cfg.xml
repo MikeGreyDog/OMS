@@ -14,8 +14,8 @@
 	        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
 	        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
 	        <property name="hibernate.connection.url">jdbc:mysql://127.0.0.1:3306/_056_DB</property>
-                <property name="hibernate.connection.username">055db</property>
-		<property name="hibernate.connection.password">055db</property>
+                <property name="hibernate.connection.username">056db</property>
+		<property name="hibernate.connection.password">056db</property>
 
 		<property name="hibernate.hbm2ddl.auto">create-drop</property>
 
