@@ -22,6 +22,7 @@ hs_err_pid*
 /.settings/
 /.metadata/
 /.recommenders/
+/target/
 /bin/
 /doc/
 /test-output/
@@ -60,7 +61,7 @@ hs_err_pid*
 *.dat
 
 # Ignore doc/notes.txt, but not doc/info/arch.txt
-# /*.txt
+/*.txt
 
 # Ignore all .txt files in the directory doc/
 # doc/**/*.txt
