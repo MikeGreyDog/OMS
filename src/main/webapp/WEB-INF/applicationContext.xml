@@ -19,6 +19,18 @@
 		base-package="com.softserveinc.edu.oms.persistence.dao.concrete" />
 	<context:component-scan
 		base-package="com.softserveinc.edu.oms.service.implementation" />
+	
+	<bean id="data" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+		<property name="DBPATH">
+			<value>#{ systemProperties['DBPATH']}</value>
+		</property>
+		<property name="DBUSER">
+			<value>#{ systemProperties['DBUSER']}</value>
+		</property>
+		<property name="DBPASS">
+			<value>#{ systemProperties['DBPASS']}</value>
+		</property>
+	</bean>
 
 	<!-- Hibernate session factory -->
 	<bean id="mySessionFactory"
