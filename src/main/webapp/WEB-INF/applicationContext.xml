@@ -21,14 +21,14 @@
 		base-package="com.softserveinc.edu.oms.service.implementation" />
 	
 	<bean id="data" class="com.mchange.v2.c3p0.ComboPooledDataSource">
-		<property name="DBPATH">
-			<value>#{ systemProperties['DBPATH']}</value>
+		<property name="jdbcUrl">
+			<value>#{systemProperties['DBPATH']}</value>
 		</property>
-		<property name="DBUSER">
-			<value>#{ systemProperties['DBUSER']}</value>
+		<property name="user">
+			<value>#{systemProperties['DBUSER']}</value>
 		</property>
-		<property name="DBPASS">
-			<value>#{ systemProperties['DBPASS']}</value>
+		<property name="password">
+			<value>#{systemProperties['DBPASS']}</value>
 		</property>
 	</bean>
 
