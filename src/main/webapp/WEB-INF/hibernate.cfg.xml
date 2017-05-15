@@ -2,9 +2,6 @@
 <!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD//EN"
                                          "http://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
-		<property name="DBPATH">${DBPATH}</property>
-		<property name="DBUSER">${DBUSER}</property>
-		<property name="DBPASS">${DBPASS}</property>
 	<session-factory>
 		<!-- /MYPC:1433/Blog;instance=SQLEXPRESS local connection properties
 		<property name="hibernate.connection.driver_class">net.sourceforge.jtds.jdbc.Driver</property>
