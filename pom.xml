@@ -34,6 +34,11 @@
 			<artifactId>spring-webmvc</artifactId>
 			<version>${org.springframework-version}</version>
 		</dependency>
+		<dependency>
+  		        <groupId>com.mchange</groupId>
+       			<artifactId>mchange-commons-java</artifactId>
+        		<version>0.2.3.4</version>
+                </dependency>
 		<!-- Roo dependencies -->
 		<dependency>
 			<groupId>org.springframework.roo</groupId>
