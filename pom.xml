@@ -13,9 +13,7 @@
 		<org.springframework.roo-version>1.0.2.RELEASE</org.springframework.roo-version>
 		<org.aspectj-version>1.8.7</org.aspectj-version>
 		<org.slf4j-version>1.5.10</org.slf4j-version>
-		<DBPATH>${DBPATH}</DBPATH>
-		<DBUSER>${DBUSER}</DBUSER>
-		<DBPASS>${DBPASS}</DBPASS>
+
 	</properties>
 	<dependencies>
 		<!-- Spring -->
