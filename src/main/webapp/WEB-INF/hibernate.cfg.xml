@@ -11,9 +11,9 @@
                 <property name="hibernate.connection.username">${data.user}</property>
 		<property name="hibernate.connection.password">${data.password}</property> -->
 		
-	        <property name="hibernate.connection.url">jdbc:mysql://System.getProperty("DBPATH")?useSSL=false</property>
-                <property name="hibernate.connection.username">System.getProperty("DBUSER")</property>
-		<property name="hibernate.connection.password">System.getProperty("DBPASS")</property>
+	        <property name="hibernate.connection.url">jdbc:mysql://System.getenv("DBPATH")?useSSL=false</property>
+                <property name="hibernate.connection.username">System.getenv("DBUSER")</property>
+		<property name="hibernate.connection.password">System.getenv("DBPASS")</property>
 
 		<property name="hibernate.hbm2ddl.auto">update</property>
 
