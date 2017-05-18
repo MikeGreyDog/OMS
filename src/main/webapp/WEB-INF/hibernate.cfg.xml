@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD//EN"
                                          "http://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
-System.getProperty("DBPATH");
-System.getProperty("DBUSER");
-System.getProperty("DBPASS");
 <hibernate-configuration>
 
 	<session-factory>		
@@ -14,9 +11,9 @@ System.getProperty("DBPASS");
                 <property name="hibernate.connection.username">${data.user}</property>
 		<property name="hibernate.connection.password">${data.password}</property> -->
 		
-	       <property name="hibernate.connection.url">jdbc:mysql://${DBPATH}?useSSL=false</property>
+	      <!-- <property name="hibernate.connection.url">jdbc:mysql://${DBPATH}?useSSL=false</property>
                 <property name="hibernate.connection.username">${DBUSER}</property>
-		<property name="hibernate.connection.password">${DBPASS}</property> 
+		<property name="hibernate.connection.password">${DBPASS}</property> --> 
 
 		<property name="hibernate.hbm2ddl.auto">update</property>
 
