@@ -2,8 +2,11 @@
 <!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD//EN"
                                          "http://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
-	<session-factory>
-		
+	Configuration cfg = new Configuration()
+    .setProperty("hibernate.connection.url", System.getenv("DBPATH"))	
+    .setProperty("hibernate.connection.username", System.getenv("DBUSER"))
+    .setProperty("hibernate.connection.password", System.getenv("DBPASS"))
+	<session-factory>		
 		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
 		<property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
 		
@@ -11,9 +14,9 @@
                 <property name="hibernate.connection.username">${data.user}</property>
 		<property name="hibernate.connection.password">${data.password}</property> -->
 		
-	        <property name="hibernate.connection.url">jdbc:mysql://$DBPATH?useSSL=false</property>
+	       <!-- <property name="hibernate.connection.url">jdbc:mysql://$DBPATH?useSSL=false</property>
                 <property name="hibernate.connection.username">$DBUSER</property>
-		<property name="hibernate.connection.password">$DBPASS</property>
+		<property name="hibernate.connection.password">$DBPASS</property> -->
 
 		<property name="hibernate.hbm2ddl.auto">update</property>
 
