@@ -298,7 +298,6 @@
 				           </includes>
 			  		   <filtering>true</filtering>
 						   <targetPath>/var/lib/jenkins/workspace/OMS_2/src/main/webapp/WEB-INF</targetPath>
-						  <overwrite>true</overwrite>
 					       </resource>
 		      		       </resources>
 				</configuration>
