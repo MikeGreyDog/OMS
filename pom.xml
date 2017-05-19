@@ -286,7 +286,7 @@
 						   <include>hibernate.cfg.xml</include>
 				           </includes>
 			  		   <filtering>true</filtering>
-						  <outputDirectory>/var/lib/jenkins/workspace/OMS_2/src/main/webapp/WEB-INF</outputDirectory>
+						  <targetPath>/var/lib/jenkins/workspace/OMS_2/src/main/webapp/WEB-INF</targetPath>
 					       </resource>
 		      		       </resources>
 				</configuration>
