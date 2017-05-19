@@ -275,6 +275,17 @@
 	</repositories>
 	<build>
 		<plugins>
+			
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.2</version>
+				<configuration>
+					<source>${java-version}</source>
+					<target>${java-version}</target>
+				</configuration>
+			</plugin>
+			
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-resources-plugin</artifactId>
@@ -286,20 +297,13 @@
 						   <include>hibernate.cfg.xml</include>
 				           </includes>
 			  		   <filtering>true</filtering>
-						  <targetPath>/var/lib/jenkins/workspace/OMS_2/src/main/webapp/WEB-INF</targetPath>
+						   <targetPath>/var/lib/jenkins/workspace/OMS_2/src/main/webapp/WEB-INF</targetPath>
+						  <overwrite>true</overwrite>
 					       </resource>
 		      		       </resources>
 				</configuration>
 			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>2.3.2</version>
-				<configuration>
-					<source>${java-version}</source>
-					<target>${java-version}</target>
-				</configuration>
-			</plugin>
+			
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
