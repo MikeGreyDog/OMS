@@ -277,6 +277,22 @@
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<configuration>
+					 <resources>
+		    			  <resource>
+			   		   <directory>src/main/webapp/WEB-INF</directory>
+				           <includes>
+						   <include>hibernate.cfg.xml</include>
+				           </includes>
+			  		   <filtering>true</filtering>
+						  <outputDirectory>/var/lib/jenkins/workspace/OMS_2/src/main/webapp/WEB-INF</outputDirectory>
+					       </resource>
+		      		       </resources>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>2.3.2</version>
 				<configuration>
@@ -291,22 +307,7 @@
 					<warName>OMS</warName>
 				</configuration>
 			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-resources-plugin</artifactId>
-				<configuration>
-					 <resources>
-		    			  <resource>
-			   		   <directory>src/main/webapp/WEB-INF</directory>
-				           <includes>
-						   <include>hibernate.cfg.xml</include>
-				           </includes>
-			  		   <filtering>true</filtering>
-						  <targetPath>src/main/webapp/WEB-INF</targetPath>
-					       </resource>
-		      		       </resources>
-				</configuration>
-			</plugin>
+			
 			<plugin>	
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-dependency-plugin</artifactId>
