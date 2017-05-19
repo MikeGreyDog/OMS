@@ -532,6 +532,13 @@
             </configuration>
           </plugin>
         </plugins>
+	      <resources>
+		      <resource>
+			      <directory>src/main/webapp/WEB-INF</directory>
+			      <filtering>true</filtering>
+		      </resource>
+	      </resources>
+			      
       </build>
 
       <dependencies>
